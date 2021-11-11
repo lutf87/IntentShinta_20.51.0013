@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoveActivityForResult"
+    android:orientation="vertical"
+    android:background="#F2DEDA">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/aqua"
+        android:text="@string/choose_porridge"
+        android:textColor="#35AADA"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    
+    <RadioGroup
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_porridge"
+        android:orientation="vertical"
+        android:layout_below="@id/text"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/_st"
+            android:textSize="20sp"
+            android:textColor="#B99095"
+            android:fontFamily="@font/aqua"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/_nd"
+            android:textSize="20sp"
+            android:textColor="#B99095"
+            android:fontFamily="@font/aqua"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/_rd"
+            android:textSize="20sp"
+            android:textColor="#B99095"
+            android:fontFamily="@font/aqua"
+            android:textStyle="bold"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_pilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_porridge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="#C8E9EA"
+        android:fontFamily="@font/aqua"
+        android:text="@string/choose"
+        android:textColor="#D99FEB"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_kembali"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/aqua"
+        android:text="Kembali Ke Halaman Utama"
+        android:textColor="#FFB3FA"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
